@@ -3,9 +3,10 @@
 {% block conteudo %}
 	<div class="container">
 		<h1 style="text-align: center;">Integração Python e Flask</h1>
+		<hr>
 		<ul class="list-group">
-			{% for frutas in frutas %}
-			<li class="list-group-item">{{frutas}}</li>
+			{% for nomes in nomes %}
+			<li class="list-group-item">{{nomes}}</li>
 			{% endfor %}
 		</ul>
 		<form action="{{url_for('principal')}}" method="POST" class="form-group">
