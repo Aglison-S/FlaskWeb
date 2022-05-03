@@ -7,9 +7,9 @@ frutas =[]
 @app.route('/', methods=["GET","POST"])
 def principal():
 	# frutas = ['melão', 'melancia']
-	fruta = request.form.get('fruta')
+	nome = request.form.get('nome')
 	if request.method == 'POST':
-		frutas.append(fruta)
+		frutas.append(nome)
 	return render_template("index.html", frutas=frutas)
 
 @app.route('/sobre')
